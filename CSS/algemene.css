@@ -1,0 +1,62 @@
+
+.FootNote_Image{
+  font-size:smaller;
+  margin-top: -5px;
+}
+
+.mainNav__link {
+  text-decoration-line:none;
+  color: #30271e;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color .2s linear, border-radius 1s ease-in 1s;
+}
+
+a:visited {
+  color: #30271e;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:active {
+  color: #30271e;
+}
+
+.active_page{
+  color: #30271e;
+}
+a:focus {
+  color: #30271e;
+  border-color: #30271e;
+}
+
+body{
+  background-color: #f9efd7;
+  font-style: 'Book Antiqua', 'Times New Roman', sans-serif;
+}
+nav {
+ width: 50vw;
+}
+
+
+ul {
+  display:flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: center;
+ gap: 1em;
+ list-style: none;
+}
+
+li {
+  background-color: #B09069;
+  padding:0.5em;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
