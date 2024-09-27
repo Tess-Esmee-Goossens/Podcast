@@ -1,7 +1,7 @@
 # Podcast
 Eerste opdracht HVA internet standaarden
 
-# termen met uitleg
+## termen met uitleg
 __DOM(Document Object Model):__ Wanneer een webpagina wordt geladen, maakt de browser een Document Object Model (DOM) van de pagina.
 
 __NodeList:__ Een NodeList is een object in de Document Object Model (DOM) dat een verzameling van nodes (elementen) vertegenwoordigt die zijn geselecteerd uit een document.
