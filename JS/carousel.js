@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Eventlistener voor de vorige knop
-    document.getElementById(`prevButton${carouselId.slice(-1)}`).addEventListener('click', () => {
+    document.getElementById(`prevButton-${carouselId.slice(-1)}`).addEventListener('click', () => {
       // Verminder de positie, en ga terug naar het laatste item als je bij het eerste bent
       position = position > 1 ? position - 1 : totalItems;
       updateCarousel(); // Werk de weergave van de carousel bij
     });
 
     // Eventlistener voor de volgende knop
-    document.getElementById(`nextButton${carouselId.slice(-1)}`).addEventListener('click', () => {
+    document.getElementById(`nextButton-${carouselId.slice(-1)}`).addEventListener('click', () => {
       // Verhoog de positie, en ga terug naar het eerste item als je bij het laatste bent
       position = position < totalItems ? position + 1 : 1;
       updateCarousel(); // Werk de weergave van de carousel bij
@@ -59,4 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialiseer beide carousels
   initializeCarousel('carousel-1');
   initializeCarousel('carousel-2');
+  initializeCarousel('carousel-3');
+  initializeCarousel('carousel-4');
 });

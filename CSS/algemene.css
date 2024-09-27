@@ -52,20 +52,23 @@ a:focus {
 }
 
 .afleveringen {
-  height: 500px;
   margin: 0;
-  display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+}
+
+.afleveringen h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Space between h2 and carousel */
+  font-size: 24px; /* Adjust as needed */
+  color: #30271e;
 }
 
 .afleveringen div {
-  grid-row: 1 / 2;
-  grid-column: 1 / 8;
   width: 90%; /* Show 3 items, each 30% wide */
-  height: 500px;
+  height: 250px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -74,7 +77,7 @@ a:focus {
 
 div.item {
   width: 30%;
-  height: 500px;
+  height: 250px;
   position: absolute;
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -120,9 +123,9 @@ div.item:nth-of-type(5) {
 }
 
 .left-arrow {
-  left: 5px; /* Positioned inside the left edge of the carousel */
+  left: 5%; /* Positioned inside the left edge of the carousel */
 }
 
 .right-arrow {
-  right: 5px; /* Positioned inside the right edge of the carousel */
+  right: 5%; /* Positioned inside the right edge of the carousel */
 }
