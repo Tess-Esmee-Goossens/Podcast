@@ -19,5 +19,12 @@ __Carousel bron__
     https://freefrontend.com/css-carousels/  --> site waar gevonden
     https://codepen.io/onion2k/pen/xxZYBVj --> code demo
 
-    
+
 ### Image Bronnen
+
+## Notieties
+
+__Over ons pagina__
+    font: 24 px;
+    margin-top: 2em;
+    margin botom: 1em;

@@ -64,6 +64,8 @@ a:focus {
   margin-bottom: 20px; /* Space between h2 and carousel */
   font-size: 24px; /* Adjust as needed */
   color: #30271e;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .afleveringen div {
