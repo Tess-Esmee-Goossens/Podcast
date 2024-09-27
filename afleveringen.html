@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./CSS/algemene.css">
     <title>Podcast</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -19,23 +20,35 @@
             </nav>
         </div>
     </header>
-    <!--
-    Carousel bron
-    https://freefrontend.com/css-carousels/  -> site waar gevonden
-    https://codepen.io/onion2k/pen/xxZYBVj -> code demo
-    -->
-    <div class="test">
-        <main id="carousel">
-            <div class="item active" data-index="1"></div>
-            <div class="item" data-index="2"></div>
-            <div class="item" data-index="3"></div>
-            <div class="item" data-index="4"></div>
-            <div class="item" data-index="5"></div>
 
-            <button id="prevButton" class="nav-arrow left-arrow">←</button>
-            <button id="nextButton" class="nav-arrow right-arrow">→</button>
-        </main>
-    </div>
+    <main>
+        <section class="afleveringen">
+            <div id="carousel-1">
+                <div class="item active" data-index="1"></div>
+                <div class="item" data-index="2"></div>
+                <div class="item" data-index="3"></div>
+                <div class="item" data-index="4"></div>
+                <div class="item" data-index="5"></div>
+
+                <button id="prevButton1" class="nav-arrow left-arrow">←</button>
+                <button id="nextButton1" class="nav-arrow right-arrow">→</button>
+            </div>
+        </section>
+
+        <section class="afleveringen">
+            <div id="carousel-2">
+                <div class="item active" data-index="1"></div>
+                <div class="item" data-index="2"></div>
+                <div class="item" data-index="3"></div>
+                <div class="item" data-index="4"></div>
+                <div class="item" data-index="5"></div>
+
+                <button id="prevButton2" class="nav-arrow left-arrow">←</button>
+                <button id="nextButton2" class="nav-arrow right-arrow">→</button>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; It's made by me</p>
     </footer>
