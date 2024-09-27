@@ -11,3 +11,13 @@ __Initialiseer:__ Instellen van Waarden
 __Positioneer:__ Het verwijst naar het proces van het bepalen van de locatie of de plaats van een element binnen een bepaalde context of omgeving.
 
 __Eventlistener:__ Een eventlistener is een functie die is geregistreerd om te reageren op een specifieke gebeurtenis (event) die plaatsvindt op een bepaald HTML-element of een andere object in de Document Object Model (DOM). Wanneer de opgegeven gebeurtenis zich voordoet, wordt de eventlistener geactiveerd en wordt de bijbehorende functie uitgevoerd.
+
+
+## Bronnen
+### Code bronnen
+__Carousel bron__
+    https://freefrontend.com/css-carousels/  --> site waar gevonden
+    https://codepen.io/onion2k/pen/xxZYBVj --> code demo
+
+    
+### Image Bronnen
