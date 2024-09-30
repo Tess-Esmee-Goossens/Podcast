@@ -2,6 +2,9 @@ body {
   background-color: #141414;
   font-family: 'Book Antiqua', 'Times New Roman', sans-serif;
 }
+p, h1, h2, h3{
+  color:#ffffff;
+}
 
 /* Header */
 header {
