@@ -1,12 +1,20 @@
 body {
-  background-color: #f9efd7;
+  background-color: #141414;
   font-family: 'Book Antiqua', 'Times New Roman', sans-serif;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
+  height: auto;
   padding: 1em;
+  background-color: #ffffff;
+}
+
+header img {
+  height:3em;
+  align-self: center;
 }
 
 nav {
@@ -18,40 +26,44 @@ ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   list-style: none;
 }
 
-.mainNav__link {
+a {
   text-decoration-line: none;
-  color: #30271e;
+  color: #141414;
+  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   transition: color 0.2s linear, border-radius 1s ease-in 1s;
 }
 
 a:visited {
-  color: #30271e;
+  color: #141414;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #141414;
 }
 
 a:active {
-  color: #30271e;
+  color: #141414;
 }
 
 .active_page {
-  color: #30271e;
+  color: #141414;
 }
 
 a:focus {
-  color: #30271e;
-  border-color: #30271e;
+  color: #141414;
+  border-color: #141414;
 }
 
-/* carousel */
+
+
+
+/* Carousel */
 .afleveringen {
   margin: 0;
   display: flex;
@@ -62,9 +74,9 @@ a:focus {
 
 .afleveringen h2 {
   text-align: center;
-  margin-bottom: 20px; /* Space between h2 and carousel */
-  font-size: 24px; /* Adjust as needed */
-  color: #30271e;
+  margin-bottom: 20px;
+  font-size: 34px;
+  color: #ffffff;
   margin-top: 2em;
   margin-bottom: 1em;
 }
@@ -78,14 +90,6 @@ a:focus {
   overflow: hidden;
 }
 
-div.item {
-  width: 30%;
-  height: 250px;
-  position: absolute;
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
 img.item {
   width: 30%;
   height: 250px;
@@ -93,32 +97,6 @@ img.item {
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease;
   object-fit: cover;
-  border: #30271e 1px;
-}
-
-div.item.active {
-  opacity: 1; /* Show active item */
-  transform: translateX(0); /* Position active item */
-}
-
-div.item:nth-of-type(1) {
-  background-color: #90f1ef; /* Light blue */
-}
-
-div.item:nth-of-type(2) {
-  background-color: #ff70a6; /* Pink */
-}
-
-div.item:nth-of-type(3) {
-  background-color: #ff9770; /* Orange */
-}
-
-div.item:nth-of-type(4) {
-  background-color: #ffd670; /* Light yellow */
-}
-
-div.item:nth-of-type(5) {
-  background-color: #e9ff70; /* Light green */
 }
 
 /* Navigation button styles */
@@ -136,9 +114,9 @@ div.item:nth-of-type(5) {
 }
 
 .left-arrow {
-  left: 5%; /* Positioned inside the left edge of the carousel */
+  left: 5%; 
 }
 
 .right-arrow {
-  right: 5%; /* Positioned inside the right edge of the carousel */
+  right: 5%; 
 }
