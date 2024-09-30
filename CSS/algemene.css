@@ -51,6 +51,7 @@ a:focus {
   border-color: #30271e;
 }
 
+/* carousel */
 .afleveringen {
   margin: 0;
   display: flex;
@@ -83,6 +84,16 @@ div.item {
   position: absolute;
   opacity: 0; /* Start hidden */
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+img.item {
+  width: 30%;
+  height: 250px;
+  position: absolute;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  object-fit: cover;
+  border: #30271e 1px;
 }
 
 div.item.active {
