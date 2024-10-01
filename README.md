@@ -24,7 +24,8 @@ __Carousel bron__
 
 ## Notieties
 
-__Over ons pagina__
-    font: 24 px;
+__Afleveringen__
+carousel
+    font: 34 px;
     margin-top: 2em;
     margin botom: 1em;

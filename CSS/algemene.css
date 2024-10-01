@@ -2,8 +2,17 @@ body {
   background-color: #141414;
   font-family: 'Book Antiqua', 'Times New Roman', sans-serif;
 }
+
 p, h1, h2, h3{
   color:#ffffff;
+  text-align: center;
+}
+h1{
+  font-size: 46px;
+  margin-top: 3em;
+}
+h2{
+  font-size: 34px;
 }
 
 /* Header */
@@ -33,34 +42,37 @@ ul {
   list-style: none;
 }
 
-a {
+nav a {
   text-decoration-line: none;
   color: #141414;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   transition: color 0.2s linear, border-radius 1s ease-in 1s;
+  padding:0.3em;
 }
 
-a:visited {
+nav a:visited {
   color: #141414;
 }
 
-a:hover {
-  color: #141414;
+nav a:hover {
+  color: #fff;
+  box-shadow: inset 300px 0 0 0 #141414;  /*  Mag dit hard coded met pixels*/
 }
 
-a:active {
-  color: #141414;
+nav a:active {
+  color: #fff;
+  box-shadow: inset 300px 0 0 0 #141414;
 }
 
 .active_page {
   color: #141414;
 }
 
-a:focus {
-  color: #141414;
-  border-color: #141414;
+nav a:focus {
+  color: #fff;
+  box-shadow: inset 300px 0 0 0 #141414;
 }
 
 
@@ -123,3 +135,32 @@ img.item {
 .right-arrow {
   right: 5%; 
 }
+
+/* Shake animation */
+@keyframes shake-horizontal {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70% { transform: translateX(-10px); }
+  20%, 40%, 60% { transform: translateX(10px); }
+  80% { transform: translateX(8px); }
+  90% { transform: translateX(-8px); }
+}
+
+ol a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  display: inline-block; /* Make the anchor an inline-block for better animation */
+  padding: 10px; /* Add some padding for better click area */
+  transition: color 0.3s;
+}
+
+ol a:active {
+  color: #fff;
+  animation: shake-horizontal 1.8s linear both;
+}
+
+ol li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+ 
