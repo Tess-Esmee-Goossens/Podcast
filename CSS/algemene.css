@@ -164,3 +164,11 @@ ol li {
   margin-bottom: 10px;
 }
  
+/*footer*/
+footer {
+  background-image: url(../Img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0.6em solid #ffffff;
+  margin-top: 5em;
+}
