@@ -235,7 +235,7 @@ footer {
 .container-footer-info {
   display: flex;
   justify-content: space-around;
-  padding: 1em 0em;
+  padding: 2em 0em;
 }
 
 footer p{
