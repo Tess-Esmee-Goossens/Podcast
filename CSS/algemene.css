@@ -47,6 +47,22 @@ h3{
   font-weight: bold;
 }
 
+.button {
+  color: #141414;
+  background-color: #ffffff;
+  font-size: 30px; /* Make sure 'px' is added to font size */
+  font-weight: 900;
+  margin-top: 1em;
+  padding:0.6em;
+  transition: color 0.2s linear, background-color 0.2s linear, transform 0.5s ease; /* Combine all transitions */
+}
+
+.button:hover {
+  background-color: #792020;
+  color: #ffffff;
+  transform: scale(1.2); /* Apply scaling effect */
+}
+
 a {
   text-decoration-line: none;
   color: #ffffff;
@@ -307,3 +323,34 @@ footer h3{
   opacity: 0.5; /* Make image slightly transparent on hover or focus */
   transition: opacity 0.3s ease; /* Smooth transition for image opacity */
 }
+
+/* Home */
+.fitst-view-point{
+  background-image: url(../Img/bg_index_Main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 0.6em solid #ffffff;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;
+  margin-bottom:5em;
+}
+.fitst-view-point h1{
+  width: 80%;
+  font-size: 4em;
+  margin: 0; 
+}
+.fitst-view-point p{
+  font-size: 2em;
+}
+
+/* Nieuws brief*/
+
+
+
+
+
+
