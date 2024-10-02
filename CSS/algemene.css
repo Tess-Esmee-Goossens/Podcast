@@ -295,14 +295,15 @@ footer h3{
   width: 80% !important;
 }
 
-/* Show the overlay on hover */
-.medewerker_container:hover .medewerker_overlay {
+.medewerker_container:hover .medewerker_overlay,
+.medewerker_container:focus-within .medewerker_overlay { /* Use focus-within for child focus */
   opacity: 1; /* Make overlay fully visible */
   pointer-events: auto; /* Allow pointer events when visible */
 }
 
 /* Optional: Reduce image opacity when overlay is visible for better readability */
-.medewerker_container:hover .image {
-  opacity: 0.5; /* Make image slightly transparent on hover */
+.medewerker_container:hover .image,
+.medewerker_container:focus-within .image { /* Apply to image on hover or focus */
+  opacity: 0.5; /* Make image slightly transparent on hover or focus */
   transition: opacity 0.3s ease; /* Smooth transition for image opacity */
 }
