@@ -247,7 +247,7 @@ footer h3{
 }
 
 /* ons team */
-.medewerker_wrapper{
+.medewerker_wrapper {
   display: flex;                
   justify-content: center;     
   flex-wrap: wrap;             
@@ -264,13 +264,13 @@ footer h3{
 }
 
 .image {
-  width: 100%; 
+  width: 96%; 
   height: auto; 
+  border: #ffffff solid 6px;
 }
 
 /* Overlay styles */
 .medewerker_overlay {
-  display: none;
   position: absolute; 
   top: 0;
   left: 0;
@@ -283,15 +283,26 @@ footer h3{
   flex-direction: column; /* Stack items vertically */
   align-items: center;
   padding-top: 10%;
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  pointer-events: none; /* Prevents pointer events when hidden */
 }
 
-.medewerker_overlay p, h3{
+.medewerker_overlay h3,
+.medewerker_overlay p {
   color: #141414;
   margin: 0;
   width: 80% !important;
 }
 
+/* Show the overlay on hover */
 .medewerker_container:hover .medewerker_overlay {
-  display: block;              
+  opacity: 1; /* Make overlay fully visible */
+  pointer-events: auto; /* Allow pointer events when visible */
 }
 
+/* Optional: Reduce image opacity when overlay is visible for better readability */
+.medewerker_container:hover .image {
+  opacity: 0.5; /* Make image slightly transparent on hover */
+  transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
