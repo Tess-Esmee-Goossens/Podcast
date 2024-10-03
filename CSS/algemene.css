@@ -1,53 +1,69 @@
+/* General Styling */
+body, p, h1, h2, h3, a {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Book Antiqua', 'Times New Roman', sans-serif;
+  margin: 0;
+}
+
 body {
   background-color: #141414;
-  font-family: 'Book Antiqua', 'Times New Roman', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+main, section {
   width: 100%;
+  margin: 0 auto;
   text-align: center;
-}
-section {
-  width: 100%; 
-  margin: 0 auto; 
-  text-align: center; 
 }
 
-p, h1, h2, h3{
-  color:#ffffff;
-  text-align: center;
-  font-size: 30px;
-  width: 50%;
+h1, h2, h3, p {
   margin: 0 auto;
 }
 
-h1{
+h1 {
   font-size: 50px;
-  margin-top: 4em;
-  margin-bottom: 1em;
+  margin: 4em 0 1em;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
   font-size: 40px;
-  color: #ffffff;
-  margin-top: 3em;
-  margin-bottom: 1em;
+  margin: 3em 0 1em;
 }
 
-h3{
+h3 {
   font-size: 2em;
   font-weight: bold;
 }
 
+p {
+  font-size: 30px;
+  width: 50%;
+}
+
+a, .button {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+a {
+  font-size: 20px;
+  padding: 0.3em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* Button Styling */
 .button {
   color: #141414 !important;
   background-color: #ffffff;
@@ -55,46 +71,26 @@ h3{
   font-weight: 900;
   margin-top: 1em;
   padding: 1em;
-  display: inline-block; 
-  transition: color 0.2s linear, background-color 0.2s linear, transform 0.5s ease;
-  cursor: pointer; 
-  text-decoration: none; 
+  display: inline-block;
 }
 
 .button:hover,
 .button:focus {
   background-color: #792020;
   color: #ffffff !important;
-  transform: scale(1.2); 
-}
-
-a {
-  text-decoration-line: none;
-  color: #ffffff;
-  font-size: 20px;
-  padding:0.3em;
-}
-
-a:visited {
-  color: #ffffff;
-}
-
-a:hover {
-  text-decoration: underline;
+  transform: scale(1.2);
 }
 
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
-  height: auto;
   padding: 1em;
   background-color: #ffffff;
 }
 
 header img {
-  height:3em;
-  align-self: center;
+  height: 3em;
 }
 
 nav {
@@ -105,59 +101,42 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   gap: 2em;
   list-style: none;
 }
 
 nav a {
-  text-decoration-line: none;
   color: #141414;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  transition: color 0.2s linear, border-radius 1s ease-in 1s;
-  padding:0.3em;
-  transition: all 0.5s;
+  padding: 0.3em;
+}
+
+nav a:hover, nav a:focus {
+  color: #ffffff !important;
+  box-shadow: inset 300px 0 0 0 #141414;
+  transform: scale(1.3);
 }
 
 nav a:visited {
   color: #141414;
 }
 
-nav a:hover {
-  color: #ffffff;
-  box-shadow: inset 300px 0 0 0 #141414;  /*  Mag dit hard coded met pixels*/
-  transform: scale(1.3);
-}
-
-nav a:active {
-  color: #ffffff;
-  box-shadow: inset 300px 0 0 0 #141414;
-}
-
-.active_page {
+nav a.active_page {
   color: #141414;
   text-decoration: underline;
 }
 
-nav a:focus {
-  color: #ffffff;
-  box-shadow: inset 300px 0 0 0 #141414;
-}
-
-
 /* Carousel */
 .afleveringen {
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .afleveringen div {
-  width: 90%; /* Show 3 items, each 30% wide */
+  width: 90%;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -169,16 +148,15 @@ img.item {
   width: 30%;
   height: 250px;
   position: absolute;
-  opacity: 0; /* Start hidden */
+  opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
   object-fit: cover;
 }
 
-/* Navigation button styles */
+/* Navigation Button Styling */
 .nav-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -186,47 +164,42 @@ img.item {
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .nav-arrow:hover {
-  transform: scale(1.2) translateY(-50%); /* Scale and maintain vertical centering */
+  transform: scale(1.2);
   color: #141414;
   background-color: #ffffff;
 }
 
 .left-arrow {
-  left: 5%; 
+  left: 5%;
 }
 
 .right-arrow {
-  right: 5%; 
+  right: 5%;
 }
 
-/* top 5 episodes*/
-ol a {
-  text-decoration: none;
-  color: #141414 !important;
-  background-color: #ffffff;
-  width: 79%;
-  font-size: 28px;
-  font-weight: 550;
-  padding: 0.5em; 
-  transition: color 0.3s;
-}
-
-ol a:active {
-  color: #141414;
-  background-color: #ffffff;
+/* Top 5 Episodes */
+ol {
+  padding: 0;
 }
 
 ol li {
   list-style-type: none;
   margin-bottom: 10px;
-  text-decoration: none;
-  color: #ffffff;
   display: flex;
   justify-content: center;
+}
+
+ol a {
+  color: #141414 !important;
+  background-color: #ffffff;
+  font-size: 28px;
+  font-weight: 550;
+  padding: 0.5em;
+  width: 79%;
 }
 
 ol li:hover a,
@@ -234,23 +207,16 @@ ol li a:focus {
   transform: scale(1.1);
   background-color: #792020;
   color: #ffffff !important;
-  transition: transform 0.3s ease;
 }
 
-ol {
-  padding: 0; 
-}
- 
-/*footer*/
+/* Footer */
 footer {
   background-image: url(../Img/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 0.6em solid #ffffff;
   margin-top: 5em;
-  left:0px;
-  bottom:0px;
-  width:100%;
+  width: 100%;
 }
 
 .container-footer-info {
@@ -259,61 +225,59 @@ footer {
   padding: 2em 0em;
 }
 
-footer p{
- text-align: left;
- font-size: 20px;
+
+
+footer p {
+  font-size: 20px;
+  width: 70%;
 }
 
-footer h2{
-  text-align: left;
+footer h2 {
   font-size: 25px;
   margin-bottom: 0px;
 }
 
-/* ons team */
+/* Ons Team */
 .medewerker_wrapper {
-  display: flex;                
-  justify-content: center;     
-  flex-wrap: wrap;             
-  width: 100%;                  
-  margin: 0 auto;       
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .medewerker_container {
-  flex: 1 1 300px;  
-  margin: 1em; 
-  position: relative;  
-  max-width: 400px; 
+  flex: 1 1 300px;
+  margin: 1em;
+  position: relative;
+  max-width: 400px;
   overflow: hidden;
 }
 
-.image {
-  width: 96%; 
-  height: auto; 
+.medewerker_wrapper section img {
+  width: 96%;
+  height: auto;
   border: #ffffff solid 6px;
 }
 
-/* Overlay styles */
+/* Overlay Styles */
 .medewerker_overlay {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8); 
-  padding: 0.2em;
-  text-align: center;
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack items vertically */
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding-top: 10%;
-  opacity: 0; /* Start fully transparent */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  pointer-events: none; /* Prevents pointer events when hidden */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
-.medewerker_overlay h3,
-.medewerker_overlay p {
+.medewerker_overlay h3, .medewerker_overlay p {
   color: #141414;
   margin: 0;
   font-size: 22px;
@@ -321,52 +285,50 @@ footer h2{
 }
 
 .medewerker_container:hover .medewerker_overlay,
-.medewerker_container:focus-within .medewerker_overlay { /* Use focus-within for child focus */
-  opacity: 1; 
-  pointer-events: auto; 
+.medewerker_container:focus-within .medewerker_overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Home */
-.fitst-view-point{
+.fitst-view-point {
   background-image: url(../Img/bg_index_Main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 0.6em solid #ffffff;
   height: 90vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Centers horizontally */
+  justify-content: center;
   align-items: center;
-  margin-bottom:5em;
+  margin-bottom: 5em;
 }
-.fitst-view-point h1{
+
+.fitst-view-point h1 {
   width: 80%;
   font-size: 4em;
-  margin: 0; 
 }
-.fitst-view-point p{
+
+.fitst-view-point p {
   font-size: 2em;
 }
 
-/* Nieuws brief*/
+/* Nieuws Brief */
 .nieuws-brief-container {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  width: 80%; 
-  margin: 0 auto; 
-  gap: 2em; 
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2em;
 }
 
 .nieuws-brief-container div {
-  flex: 1; 
+  flex: 1;
 }
 
 .nieuws-brief-container img {
-  max-width: 40%; 
+  max-width: 40%;
   height: auto;
-  margin: 0; 
   border: #ffffff solid 4px;
 }
-
