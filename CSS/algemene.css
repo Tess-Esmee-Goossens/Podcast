@@ -128,6 +128,24 @@ nav a.active_page {
   text-decoration: underline;
 }
 
+@media (max-width: 1200px) {
+  /* logo and nav onder elkaar */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    width: 100%; 
+    margin-top: 1em;
+  }
+
+  nav a {
+    font-size: 24px;
+  }
+}
+
+
 /* Carousel */
 .afleveringen {
   display: flex;
