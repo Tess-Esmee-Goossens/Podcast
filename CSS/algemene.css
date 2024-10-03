@@ -25,12 +25,12 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3.1em;
   margin: 4em 0 1em;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.5em;
   margin: 3em 0 1em;
 }
 
@@ -40,7 +40,7 @@ h3 {
 }
 
 p {
-  font-size: 30px;
+  font-size: 1.8em;
   width: 50%;
 }
 
@@ -51,7 +51,7 @@ a, .button {
 }
 
 a {
-  font-size: 20px;
+  font-size: 1.2em;
   padding: 0.3em;
 }
 
@@ -67,7 +67,7 @@ a:visited {
 .button {
   color: #141414 !important;
   background-color: #ffffff;
-  font-size: 30px;
+  font-size: 1.8em;
   font-weight: 900;
   margin-top: 1em;
   padding: 1em;
@@ -107,7 +107,7 @@ ul {
 
 nav a {
   color: #141414;
-  font-size: 26px;
+  font-size: 1.6em;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.3em;
@@ -115,7 +115,7 @@ nav a {
 
 nav a:hover, nav a:focus {
   color: #ffffff !important;
-  box-shadow: inset 300px 0 0 0 #141414;
+  box-shadow: inset 18.75em 0 0 0 #141414;
   transform: scale(1.3);
 }
 
@@ -128,7 +128,7 @@ nav a.active_page {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
+ @media (max-width: 1200px) { /* https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
   /* logo and nav onder elkaar */
   header {
     flex-direction: column;
@@ -141,10 +141,9 @@ nav a.active_page {
   }
 
   nav a {
-    font-size: 24px;
+    font-size: 1.5em;
   }
 }
-
 
 /* Carousel */
 .afleveringen {
@@ -206,7 +205,7 @@ ol {
 
 ol li {
   list-style-type: none;
-  margin-bottom: 10px;
+  margin-bottom: 0.8em;
   display: flex;
   justify-content: center;
 }
@@ -214,7 +213,7 @@ ol li {
 ol a {
   color: #141414 !important;
   background-color: #ffffff;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: 550;
   padding: 0.5em;
   width: 79%;
@@ -243,15 +242,17 @@ footer {
   padding: 2em 0em;
 }
 
-
+footer a {
+  font-size: 1em;
+}
 
 footer p {
-  font-size: 20px;
+  font-size: 1.2em;
   width: 70%;
 }
 
 footer h2 {
-  font-size: 25px;
+  font-size: 1.5em;
   margin-bottom: 0px;
 }
 
@@ -275,7 +276,7 @@ footer h2 {
 .medewerker_wrapper section img {
   width: 96%;
   height: auto;
-  border: #ffffff solid 6px;
+  border: #ffffff solid 0.4em;
 }
 
 /* Overlay Styles */
@@ -298,7 +299,7 @@ footer h2 {
 .medewerker_overlay h3, .medewerker_overlay p {
   color: #141414;
   margin: 0;
-  font-size: 22px;
+  font-size: 1.3em;
   width: 80% !important;
 }
 
@@ -348,5 +349,5 @@ footer h2 {
 .nieuws-brief-container img {
   max-width: 40%;
   height: auto;
-  border: #ffffff solid 4px;
+  border: #ffffff solid 0.3em;
 }
