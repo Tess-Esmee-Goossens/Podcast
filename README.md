@@ -22,10 +22,3 @@ __Carousel bron__
 
 ### Image Bronnen
 
-## Notieties
-
-__Afleveringen__
-carousel
-    font: 34 px;
-    margin-top: 2em;
-    margin botom: 1em;
