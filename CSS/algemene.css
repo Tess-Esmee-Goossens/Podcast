@@ -63,6 +63,12 @@ a:visited {
   color: #ffffff;
 }
 
+.bronnen_lijst{
+  text-align: left !important;
+  justify-content: center;
+  width: auto;
+}
+
 /* Button Styling */
 .button {
   color: #141414 !important;
